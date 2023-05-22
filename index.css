@@ -1,0 +1,24 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+#pagina{
+    margin: 0 auto;
+    background-color: antiquewhite;
+    max-width: 1000px;
+}
+header{
+    text-align: center;
+    margin: 30px;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+}
+.informacoes{   
+    height: auto;
+    border: solid black 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
