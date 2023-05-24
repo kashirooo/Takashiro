@@ -4,21 +4,47 @@
 }
 #pagina{
     margin: 0 auto;
+    padding: 10px;
     background-color: antiquewhite;
     max-width: 1000px;
+    border-radius: 10px;
 }
 header{
     text-align: center;
     margin: 30px;
 }
 main{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#anexos{
+    margin: 0 auto;
+    width: 100%;
+    padding-bottom: 1%;
+    border-bottom: solid black 1px;
+    display: flex;
+    justify-content: space-around;
+}
+form{
     display: flex;
     justify-content: space-around;
 }
 .informacoes{   
+    padding: 3px;
     height: auto;
     border: solid black 1px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    gap: 10px;
+}
+table, tr, th, td{
+    border: solid black 1px;
+    border-collapse: collapse;
+    padding: 3px;
+}
+#botao{
+    margin: 0 auto;
 }
