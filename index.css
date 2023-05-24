@@ -48,3 +48,37 @@ table, tr, th, td{
 #botao{
     margin: 0 auto;
 }
+#anexoA{
+    display: flex;
+    flex-direction: column ;
+}
+#anexoB{
+    display: none;
+}
+#anexoC{
+    display: none;
+}
+#anexoD{
+    display: none;
+}
+#anexoE{
+    display: none;
+}
+#anexoF{
+    display: none;
+}
+#anexoG{
+    display: none;
+}
+#anexoH{
+    display: none;
+}
+#anexoI{
+    display: none;
+}
+#anexoJ{
+    display: none;
+}
+#anexoK{
+    display: none;
+}

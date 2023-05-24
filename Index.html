@@ -13,90 +13,147 @@
             <h3>Preencha os formulários a seguir para gerar os anexos</h3>
         </header>
         <main>
+            <!-- barra de navegação de anexos -->
             <div id="anexos">
-                <button>Anexo "A"</button>
-                <button>Anexo "B"</button>
-                <button>Anexo "C"</button>
-                <button>Anexo "D"</button>
-                <button>Anexo "E"</button>
-                <button>Anexo "F"</button>
-                <button>Anexo "G"</button>
-                <button>Anexo "H"</button>
-                <button>Anexo "I"</button>
-                <button>Anexo "J"</button>
-                <button>Anexo "K"</button>
+                <button id="AnexoA" onclick="anexoa()">Anexo "A"</button>
+                <button id="AnexoB" onclick="anexob()">Anexo "B"</button>
+                <button id="AnexoC" onclick="anexoc()">Anexo "C"</button>
+                <button id="AnexoD" onclick="anexod()">Anexo "D"</button>
+                <button id="AnexoE" onclick="anexoe()">Anexo "E"</button>
+                <button id="AnexoF" onclick="anexof()">Anexo "F"</button>
+                <button id="AnexoG" onclick="anexog()">Anexo "G"</button>
+                <button id="AnexoH" onclick="anexoh()">Anexo "H"</button>
+                <button id="AnexoI" onclick="anexoi()">Anexo "I"</button>
+                <button id="AnexoJ" onclick="anexoj()">Anexo "J"</button>
+                <button id="AnexoK" onclick="anexok()">Anexo "K"</button>
             </div>
-            <form action="">
-                <div class="informacoes">
-                    <select name="funcao" id="funcao" required>
-                        <option value="">--Selecione a função--</option>
-                        <option value="OfDia">OfDia</option>
-                        <option value="AdjOfDia">AdjOfDia</option>
-                        <option value="CmtGda">CmtGda</option>
-                        <option value="SgtDia">SgtDia</option>
-                    </select>
-                    <select name="graduacao" id="graduacao" required>
-                        <option value="">--Selecione Post/Grad--</option>
-                        <option value="1Ten">1º Ten</option>
-                        <option value="2Ten">2º Ten</option>
-                        <option value="1Sgt">1º Sgt</option>
-                        <option value="2Sgt">2º Sgt</option>
-                        <option value="3Sgt">3º Sgt</option>
+            <!-- aaqui se inicia o HTML do Anexo A -->
+                <div id="anexoA">
+                    <form action="">
+                        <div class="informacoes">
+                            <select name="funcao" id="funcao" required>
+                                <option value="">--Selecione a função--</option>
+                                <option value="OfDia">OfDia</option>
+                                <option value="AdjOfDia">AdjOfDia</option>
+                                <option value="CmtGda">CmtGda</option>
+                                <option value="SgtDia">SgtDia</option>
+                            </select>
+                            <select name="graduacao" id="graduacao" required>
+                                <option value="">--Selecione Post/Grad--</option>
+                                <option value="1Ten">1º Ten</option>
+                                <option value="2Ten">2º Ten</option>
+                                <option value="1Sgt">1º Sgt</option>
+                                <option value="2Sgt">2º Sgt</option>
+                                <option value="3Sgt">3º Sgt</option>
 
-                    </select>
-                    <p>Nome de Guerra </p>
-                    <input type="text" id="Nome" required>
-                    <p>Nr da Pistola</p>
-                    <input type="text" id="pst" maxlength="5" placeholder="Somente Números" required>
-                    <p>Nr do Fuzil</p>
-                    <input type="text" id="fz" maxlength="6" placeholder="Somente Números" required>
-                    <button type="submit">Próximo</button>
-                </div>
-                <div class="informacoes">
-                    <select name="Cb-Sd" id="" required>
-                        <option value="">--Selecione a função--</option>
-                        <option value="CbGda">CbGda</option>
-                        <option value="CbDia">CbDia</option>
-                        <option value="Sentinela">Sentinela</option>
-                        <option value="Plantao">Plantão</option>
-                    </select>
-                    <select name="graduacao" id="graduacao" required>
-                        <option value="">--Selecione Post/Grad--</option>
-                        <option value="Cb">Cabo</option>
-                        <option value="Sd">Soldado</option>
-                    </select>
-                    <p>Nome de Guerra </p>
-                    <input type="text" id="Nome" required>
-                    <p>Nr do Fuzil</p>
-                    <input type="text" id="fz" maxlength="6" placeholder="Somente Números" required>
+                            </select>
+                            <p>Nome de Guerra </p>
+                            <input type="text" id="Nome" required>
+                            <p>Nr da Pistola</p>
+                            <input type="text" id="pst" maxlength="5" placeholder="Somente Números" required>
+                            <p>Nr do Fuzil</p>
+                            <input type="text" id="fz" maxlength="6" placeholder="Somente Números">
+                            <button type="submit">Próximo</button>
+                        </div>
+                        <div class="informacoes">
+                            <select name="Cb-Sd" id="" required>
+                                <option value="">--Selecione a função--</option>
+                                <option value="CbGda">CbGda</option>
+                                <option value="CbDia">CbDia</option>
+                                <option value="Sentinela">Sentinela</option>
+                                <option value="Plantao">Plantão</option>
+                            </select>
+                            <select name="graduacao" id="graduacao" required>
+                                <option value="">--Selecione Post/Grad--</option>
+                                <option value="Cb">Cabo</option>
+                                <option value="Sd">Soldado</option>
+                            </select>
+                            <p>Nome de Guerra </p>
+                            <input type="text" id="Nome" required>
+                            <p>Nr do Fuzil</p>
+                            <input type="text" id="fz" maxlength="6" placeholder="Somente Números" required>
 
-                    <select name="QH" id="QH" required>
-                        <option value="">--Selecione Quarto de Hora--</option>
-                        <option value="1">1º Quarto</option>
-                        <option value="2">2º Quarto</option>
-                        <option value="3">3º Quarto</option>
-                    </select>
-                    <button type="submit">Próximo</button>
+                            <select name="QH" id="QH" required>
+                                <option value="">--Selecione Quarto de Hora--</option>
+                                <option value="1">1º Quarto</option>
+                                <option value="2">2º Quarto</option>
+                                <option value="3">3º Quarto</option>
+                            </select>
+                            <button type="submit">Próximo</button>
+                        </div>
+                    </form>
+                    <table>
+                        <tr>
+                            <th>Função</th>
+                            <th>Posto</th>
+                            <th>Nome de Guerra</th>
+                            <th>Numero do Pst</th>
+                            <th>Numero do Fz</th>
+                        </tr>
+                        <tr>
+                            <td>OfDia</td>
+                            <td>2º Ten</td>
+                            <td>Evilásio</td>
+                            <td>45623</td>
+                            <td>666958</td>
+                        </tr>
+                        <tr>
+                            <td>Cmt Gda</td>
+                            <td>3º Sgt</td>
+                            <td>Braga</td>
+                            <td>45622</td>
+                            <td>958666</td>
+                        </tr>
+                        <tr>
+                            <td>Cb Gda</td>
+                            <td>Cb</td>
+                            <td>Paulo Henrique</td>
+                            <td>*</td>
+                            <td>958666</td>
+                        </tr>
+                    </table>
+                    <span id="botao">  <button type="submit">Gerar PDF</button>    </span>
                 </div>
-            </form>
-            <table>
-                <tr>
-                    <th>Posto</th>
-                    <th>Função</th>
-                    <th>Nome de Guerra</th>
-                    <th>Numero do Pst</th>
-                    <th>Numero do Fz</th>
-                </tr>
-                <tr>
-                    <td value="#funcao"></td>
-                    <td value="#graduacao"></td>
-                    <td value="#nome"></td>
-                    <td value="#pst"></td>
-                    <td value="#fz"></td>
-                </tr>
-            </table>
-            <span id="botao">  <button type="submit">Gerar PDF</button>    </span>
-            
+            <!-- aqui se inicia o HTML do Anexo B -->
+            <div id="anexoB">
+                <h1>aqui é o anexo B</h1>
+            </div>
+            <!-- aqui se inicia o HTML do Anexo C -->
+            <div id="anexoC">
+                <h1>aqui é o anexo C</h1>
+            </div>
+            <!-- aqui se inicia o HTML do Anexo D -->
+            <div id="anexoD">
+                <h1>aqui é o anexo D</h1>
+            </div>
+            <!-- aqui se inicia o HTML do Anexo E -->
+            <div id="anexoE">
+                <h1>aqui é o anexo E</h1>
+            </div>
+            <!-- aqui se inicia o HTML do Anexo F -->
+            <div id="anexoF">
+                <h1>aqui é o anexo F</h1>
+            </div>
+            <!-- aqui se inicia o HTML do Anexo G -->
+            <div id="anexoG">
+                <h1>aqui é o anexo G</h1>
+            </div>
+            <!-- aqui se inicia o HTML do Anexo H -->
+            <div id="anexoH">
+                <h1>aqui é o anexo H</h1>
+            </div>
+            <!-- aqui se inicia o HTML do Anexo I -->
+            <div id="anexoI">
+                <h1>aqui é o anexo I</h1>
+            </div>
+            <!-- aqui se inicia o HTML do Anexo J -->
+            <div id="anexoJ">
+                <h1>aqui é o anexo J</h1>
+            </div>
+            <!-- aqui se inicia o HTML do Anexo K -->
+            <div id="anexoK">
+                <h1>aqui é o anexo K</h1>
+            </div>
     </main>
     <script src="script.js"></script>
 </body>
